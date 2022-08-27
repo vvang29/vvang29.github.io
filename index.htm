@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./mian.css">
+    <title>Document</title>
+
+</head>
+
+<body onresize="fnAdjust();" ;>
+    <div class="container">
+
+        <h1>查詢螢幕/視窗/網頁大小</h1>
+        <h3>查詢後，歡迎點擊下圖</h3>
+        <div class="interaction_screen">
+            <div class="screen" onclick="fnHightLight();">
+                <img class="browser_img" onclick="fnHightLight2();" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3r_pWo0zDUAQWSqdrXM6_gE9pCgdpnVxS8x4_9UahRC8cyiKlRrbMjK2SFG21CuUbj0&usqp=CAU" alt="">
+                </div>
+       
+        <br>
+        <div class="container_btn">
+            <button value="submit" onclick="fnCheck();">查詢</button>
+            <button value="reset" onclick="fnRemove()" ;>清除</button>
+        </div>
+        <br>
+        <div id="demo" class="demo demoHighlight" > </div>
+        <div id="demo2" class="demo"> </div>
+        <div id="demo3" class="demo"> </div>
+
+        
+        </div>
+    </div>
+    <script>
+        var show = document.getElementById("demo");
+        var show2 = document.getElementById("demo2");
+        var show3 = document.getElementById("demo3");
+        function fnCheck() {
+            var screenWidth = screen.width;
+            var screenHeight = screen.height;
+            var browserWidth = window.innerWidth;
+            var browserHeight = window.innerHeight;
+            var webWidth = document.documentElement.scrollWidth;
+            var webHeight = document.documentElement.scrollHeight;
+            show.innerHTML = `電腦螢幕解析度(Screen)：寬${screenWidth}x高${screenHeight}<br>`
+            show2.innerHTML =`瀏覽器視窗(browser)：寬${browserWidth}x高${browserHeight}<br>`;
+            show3.innerHTML = `網頁(webpage)：寬${webWidth}x高${webHeight}`;
+            
+        }
+        function fnRemove() {
+            show.innerHTML = null;
+            show2.innerHTML = null;
+            show3.innerHTML = null;
+        }
+        function fnHightLight(){
+            document.getElementById("demo").classList.toggle("colorChg");        
+        }
+        function fnHightLight2(){
+            document.getElementById("demo2").classList.toggle("colorChg2");        
+        }
+
+    </script>
+</body>
+
+</html>
