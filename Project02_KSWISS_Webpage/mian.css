@@ -1,0 +1,202 @@
+body{
+    
+}
+
+.container{
+    width:100%;
+    /* border:3px red solid; */
+    padding: 0;
+}
+
+.nav{
+   
+    /* border:3px pink solid; */
+    width:100%;
+    height:30vh;
+    display:flex;
+    flex-direction: column;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    
+}
+.banner{
+    background:url("./img/banner.png") no-repeat left top ;
+    background-attachment: fixed;
+    background-size: contain;
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:0;
+    display: block;
+        /* border:3px pink solid;  */
+
+}
+
+ul{
+    list-style: none;
+    font-size: 11px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.list_1{
+    width:100%;
+    height: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.61);
+    color:#FFD600;
+    padding-top: 11px;
+    position: relative;
+}
+.logo>img{
+    width:30px;
+    object-fit: contain;
+    position: absolute;
+    top:0px;
+    left:15px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.list_2{
+    width:80%;
+    height: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+    text-shadow: white 0 0 2px;
+    font-weight: bolder;
+    
+
+}
+
+.list_2>li:hover{
+    color:white;
+    text-shadow: black 0px 4px 4px;
+}
+li{
+    margin-right: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+.body_container{
+    margin-top: 450px;
+    width:100%;
+    height:1800px;
+    position:relative;
+    /* border:3px mediumslateblue solid; */
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent),  url("./img/圖層\ 2.png") no-repeat center bottom;
+}
+.info{
+    width:100%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border:3px green solid; */
+
+}
+.title{
+    font-size: 2em;
+}
+.info_text{
+    display: flex;
+    align-items: center;
+}
+.info_text_1{
+    width:370px;
+    height: 75px;
+}
+.info_text_2{
+    width:347px;
+    height: 199px;
+}
+.features{
+    width:100%;
+    /* border:3px blue solid; */
+    position: absolute;
+    top:900px;
+}
+.features>img{
+    width:100%;
+    object-fit: contain;
+}
+.cards_area{
+    width:100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    /* overflow: scroll; */
+    position: absolute;
+    top:1250px;
+    /* border: 3px orangered solid; */
+
+    
+}
+.cards{
+    width:261px;
+    height: 451px;
+    background: rgba(0, 0, 0, 0.623);
+    margin:0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;    
+    /* border:3px turquoise solid; */
+    transition: all 0.5s;
+    
+}
+.cards:hover{
+    box-shadow: white 0 0 5px;
+    transform: scale(1.1);
+}
+.cards img{
+    width:100%;
+    object-fit: contain;
+}
+.card_text{
+    color:white;
+    font-size: 12px;
+    width:241px;
+    text-align: center;
+    /* border:3px darkorange solid; */
+}
+.shoes_area{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.8), black);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* border: 3px yellow solid; */
+    overflow-x: scroll;
+}
+.shoes_title{
+    color:white;
+
+}
+.shoes_img{
+    width:100%;
+    height: 260px;
+    /* border: 3px skyblue solid; */
+    display: flex;
+    cursor: pointer;
+}
+.shoes_img>img{
+    width: 274px;
+    object-fit: contain;
+}
+.shoes_img>img:hover{
+    
+}

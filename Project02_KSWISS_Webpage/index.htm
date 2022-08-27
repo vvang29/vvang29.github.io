@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="mian.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    
+        <!-- 全部容器 -->
+        <div class="nav" id="nav">
+            <ul class="list_1">
+                <div class="logo">
+                    <img src="./img/K-Swiss_logo_logotype.png" alt="">
+                </div>
+                <li>MY ACCOUNT</li>
+                <li>WISHLIST</li>
+                <li>ORDER TRACKING</li>
+                <li><span class="material-symbols-outlined">
+                    shopping_cart
+                    </span></li>
+            </ul>
+            <ul class="list_2">
+                <li>MEN’S</li>
+                <li>WOMEN’S</li>
+                <li>KIDS'</li>
+                <li>EQUIPMENT</li>
+                <li>INNOVATION</li>
+                <li>BLOG</li>
+                <li>ATHLETES</li>
+                <li>EVENTS</li>
+                <li><span class="material-symbols-outlined">
+                    search
+                    </span></li>
+            </ul>
+        </div>
+        <div class="banner"></div>
+        <div class="body_container">
+            <div class="info">
+                <div class="title">Waterproof專業防水系列</div>
+                <div class="info_text">
+                    <div class="info_text_1">K-SWISS 長年熱銷的輕量防水鞋，秋冬新色登場！ 防水黑科技應用，讓你鞋內永遠是晴天， 無論晴雨，瑤瑤總是與你一起漫步每一刻。</div>
+                    <div class="info_text_2">專業防水系列 | Lundahl LTH WP ｜<br>
+                        <br>✔防水塗層的鞋身
+                        <br>✔無縫排水鞋舌的設計
+                        <br>✔超輕量化鞋身
+                        <br>✔防滑耐磨鞋底
+                        <br>✔Ortholite 專利抗菌抑臭鞋墊
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary">Read More</button>
+
+            </div>
+            <div class="features">
+                <img src="./img/3icons.png" alt="">
+            </div>
+            <div class="cards_area">
+                <div class="cards">
+                    <div class="img">
+                        <img src="./img/耐磨鞋底.png" alt="">
+                    </div>
+                    <div class="card_text">除了防水表面材質與特殊接合工法外， 鞋底橡膠更加強防滑耐磨，重點還極輕量，另外還有 OrthoLite
+                        專利抗菌抑臭鞋墊，讓我們日常外出或巧遇午後陣雨都能保有良好的舒適穿著體驗。</div>
+                    <button type="button" class="btn btn-secondary">Read More</button>
+
+                </div>
+                <div class="cards">
+                    <div class="img">
+                        <img src="./img/防水黑科技.png" alt="">
+                    </div>
+                    <div class="card_text">
+                        鞋子的設計方面，也特別將鞋身到鞋舌部分相連，「無縫排水鞋舌的設計」X「防水塗層的皮革鞋身」，雙重保護大大提升防水保護力，就連內裡也強化棉質的防水，全面提升阻擋水滴的效果，就算突遇雷陣雨也絲毫不擔心「軟硬兼濕」的窘境。
+                    </div>
+                    <button type="button" class="btn btn-secondary">Read More</button>
+
+
+                </div>
+                <div class="cards">
+                    <div class="img"><img src="./img/抗菌鞋墊.png" alt=""></div>
+                    <div class="card_text">K-SWISS 防水系列鞋款的特色，在鞋墊方面特別選用 OrthoLite
+                        專利抗菌抑臭鞋墊，除了輔佐回彈減震外，更提升鞋內的乾爽及循環，有效減少腳汗和濕氣，也可分散足部壓力。</div>
+                    <button type="button" class="btn btn-secondary">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="shoes_area">
+            <div class="shoes_title"><h3>Waterproof專業防水系列</h3></div>
+            <div class="shoes_img">
+                <img src="./img/shoes2022Q3-1.png" alt="">
+                <img src="./img/shoes2022Q3-2.png" alt="">
+                <img src="./img/shoes2022Q3-3.png" alt="">
+                <img src="./img/shoes2022Q3-4.png" alt="">
+
+            </div>
+        </div>
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<script>
+    window.onscroll = function(){fnStickyNav();};
+    function fnStickyNav(){
+        document.getElementById("nav").style.position="sticky";
+    }
+</script>
+</body>
+
+</html>
