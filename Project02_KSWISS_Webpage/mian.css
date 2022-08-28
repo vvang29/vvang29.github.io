@@ -20,6 +20,104 @@ body{
     z-index: 1;
     
 }
+/* 登入頁面 */
+.loginForm {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: none;  /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+}
+
+
+.container_form {
+    width: 470px;
+    background-color: white;
+    padding: 20px 20px;
+    margin: 15% auto 15% auto;
+    animation: loginFormShow 1s ease 0s 1 normal forwards;
+
+}
+
+@keyframes loginFormShow {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.form_vanish{
+    animation: loginFormVanish 1s ease 0s 1 normal forwards;
+}
+@keyframes loginFormVanish {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+}
+
+
+hr{
+    margin: 0px;
+}
+.form_head{
+    display: flex;
+    justify-content: space-between;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.exit {
+    position: relative;
+    cursor: pointer;
+}
+.btn_area>button{
+background-color: rgb(22,78,128);
+border-radius:10px ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin:5px;
+}
+/* 待改 */
+button:hover{
+    opacity: 0.8;
+}
+.btn_area{
+    display: flex;
+}
+
+#cancelbtn {
+    background-color: rgb(128, 26, 22);
+  }
+
+.mainLogin {}
+
+.otherLogin {
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.otherLogin>a{
+    margin:5px;
+}
+/* 登入頁面 */
+
 .banner{
     background:url("./img/banner.png") no-repeat left top ;
     background-attachment: fixed;
@@ -46,11 +144,11 @@ ul{
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(0, 0, 0, 0.61);
-    color:#FFD600;
+    color:rgb(255, 255, 255);
     padding-top: 11px;
     position: relative;
 }
-.logo>img{
+.logo a img{
     width:30px;
     object-fit: contain;
     position: absolute;
