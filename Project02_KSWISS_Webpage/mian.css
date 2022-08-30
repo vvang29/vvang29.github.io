@@ -1,3 +1,6 @@
+*{
+    transition: all 0.3s;
+}
 body{
     
 }
@@ -106,7 +109,10 @@ button:hover{
     background-color: rgb(128, 26, 22);
   }
 
-.mainLogin {}
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
 
 .otherLogin {
     width:100%;
@@ -138,6 +144,46 @@ ul{
     justify-content: flex-end;
     
 }
+/*下拉式選單 My Account*/
+.myAccount{
+    position:relative
+}
+
+.dropdown{
+    position: absolute;
+    top:25px;
+    display: block;
+    padding:0;
+    width:120%;
+    display: none;
+}
+.myAccount:hover .dropdown{
+    animation: myAccount 1s ease 0s 1 normal forwards;
+    display:block;
+}
+@keyframes myAccount {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+}
+.dropdown>li{
+    background-color: rgb(0, 0, 0);
+    width:100%;
+    padding: 10px;;   
+}
+.dropdown>li:hover{
+    background: rgb(22,78,129);
+}
+/*下拉式選單*/
+
 .list_1{
     width:100%;
     height: 37px;
@@ -278,7 +324,6 @@ li{
     align-items: flex-start;
     justify-content: space-evenly;
     /* border: 3px yellow solid; */
-    overflow-x: scroll;
 }
 .shoes_title{
     color:white;
@@ -298,3 +343,45 @@ li{
 .shoes_img>img:hover{
     
 }
+/* footer */
+.footer{
+    width:100%;
+    height:100%;
+    background: linear-gradient(to bottom, #4F5862, black);
+    color:white;
+    padding: 15px 0;
+    margin:0;
+    /* font-size: 1rem; */
+    /* position: relative; */
+}
+.footer_moreInfo{
+    /* position: absolute;
+    left:50px; */
+    margin: 0 15px;
+    display:flex;
+    justify-content: space-between;
+}
+.title{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.footer p{
+    width:300px;
+}
+.footer_box_area{
+    display:flex;
+}
+.footer_box>ul{
+    display: block;
+    margin-right:0px;
+}
+.footer ul li{
+    margin:0 15px 15px 15px;
+}
+.footer_below{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+
+}
+/* footer */
