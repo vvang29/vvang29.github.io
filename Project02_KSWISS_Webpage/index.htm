@@ -13,9 +13,9 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <title>KSWISS Waterproof專業防水系列</title>
 </head>
@@ -54,11 +54,13 @@
             <li>BLOG</li>
             <li>ATHLETES</li>
             <li>EVENTS</li>
-            <li><span class="material-symbols-outlined">
+            <li onclick="fnSearch();"><span class="material-symbols-outlined">
                     search
                 </span></li>
         </ul>
+
     </div>
+
     <!-- 登入頁面 -->
     <div id="loginForm" class="loginForm">
         <div id="container_form" class="container_form">
@@ -93,6 +95,20 @@
         </div>
     </div>
     <!-- 登入頁面 -->
+    <!-- 搜尋頁面 -->
+    <div class="search_modal" id="search_modal">
+        <span id="exit_search" onclick="fnRemoveSearch();" class="material-symbols-rounded exit">
+            close
+        </span>
+        <div class="search_area">
+            <form action="./test.php" method="get">
+                <input type="text" placeholder="Search..." id="searchBox">
+                <button type="submit" class="">送出</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- 搜尋頁面 -->
     <div class="banner"></div>
     <div class="body_container">
         <div class="info">
@@ -200,15 +216,18 @@
         </div>
         <hr>
         <div class="footer_below">
-        <div class="copyright">COPYRIGHT © K•SWISS. ALL RIGHTS RESERVED 練習用，無商業用途
-        </div>
-        <div class="up">
-            TOP<span class="material-symbols-outlined">
+            <div class="copyright">COPYRIGHT © K•SWISS. ALL RIGHTS RESERVED 練習用，無商業用途
+            </div>
+            <div class="group_UP" onclick="topFunction();">
+            <div class="up">TOP</div>
+            <span class="material-symbols-outlined">
                 arrow_upward
-                </span> 
+            </span>
+        </div>
         </div>
     </div>
-    </div>
+
+
 
 
 
@@ -232,6 +251,18 @@
         function fnRemove() {
             var disappear = document.getElementById("loginForm");
             disappear.style.display = "none";
+        }
+        function fnSearch() {
+            var show = document.getElementById("search_modal");
+            show.style.display = "block";
+        }
+        function fnRemoveSearch() {
+            var disappear = document.getElementById("search_modal");
+            disappear.style.display = "none";
+        }
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
 </body>
