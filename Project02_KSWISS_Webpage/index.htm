@@ -29,14 +29,21 @@
                 <a href="#"><img src="./img/K-Swiss_logo_logotype.png" alt=""></a>
             </div>
             <li onclick="fnFormShow();">SIGN IN</li>
-            <li>MY ACCOUNT</li>
+            <li class="myAccount">MY ACCOUNT
+                <ul class="dropdown">
+                    <li>會員中心</li>
+                    <li>訂單查詢</li>
+                    <li>退貨／退款</li>
+                    <li>線上客服</li>
+                </ul>
+            </li>
             <li>WISHLIST</li>
             <li>ORDER TRACKING</li>
             <li><span class="material-symbols-outlined">
                     shopping_cart
                 </span></li>
         </ul>
-        
+
 
         <ul class="list_2">
             <li>MEN’S</li>
@@ -52,6 +59,40 @@
                 </span></li>
         </ul>
     </div>
+    <!-- 登入頁面 -->
+    <div id="loginForm" class="loginForm">
+        <div id="container_form" class="container_form">
+            <div class="form_head">
+                <p>登入</p>
+                <span id="exit" onclick="fnRemove();" class="material-symbols-rounded exit">
+                    close
+                </span>
+            </div>
+            <hr>
+            <form action="./action.php" method="post">
+
+                <div class="mainLogin">
+                    <label for="userName">帳號</label><br>
+                    <input type="text" name="userName" id="userName" size="40" placeholder="請輸入帳號" required><br>
+                    <label for="userPsw">密碼</label><br>
+                    <input type="password" name="userPsd" id="userPsd" size="40" placeholder="請輸入密碼" required><br>
+                    <input type="checkbox" name="remember" id="remember">記得帳號密碼
+                    <br>
+                    <div class="btn_area">
+                        <button type="submit">登入</button>
+                        <button id="cancelbtn" type="reset">清除</button>
+                    </div>
+                    <br>
+                </div>
+                <div class="otherLogin">
+                    <a href="#">註冊</a>
+                    <a href="#">忘記密碼</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- 登入頁面 -->
     <div class="banner"></div>
     <div class="body_container">
         <div class="info">
@@ -113,41 +154,63 @@
 
         </div>
     </div>
-    <!-- 登入頁面 -->
-    <div id="loginForm" class="loginForm">
-        <div id="container_form" class="container_form">
-            <div class="form_head">
-                <p>登入</p>
-            <span id="exit" onclick="fnRemove();" class="material-symbols-rounded exit">
-                close
-            </span>
+    <div class="footer">
+        <div class="footer_moreInfo">
+            <div class="subscription">
+                <p class="title">Join the K-Swiss Team</p>
+                <p>Be the first to know about new product. By clicking on “Sign Up”, you agree to receive marketing
+                    emails and have read and agree to K-Swiss's Privacy and Terms of Use.</p>
+            </div>
+            <div class="footer_box_area">
+                <div class="footer_box">
+                    <ul>
+                        <li style="font-weight: 900;">Company</li>
+                        <li>Our Story</li>
+                        <li>Contact Us</li>
+                        <li>Club K-Swiss Loyalty Program</li>
+                        <li>Career Opportunities</li>
+                        <li>Wholesale Login</li>
+                    </ul>
+                </div>
+                <div class="footer_box">
+                    <ul>
+                        <li style="font-weight: 900;">Customer Support</li>
+                        <li>Gift Cards</li>
+                        <li>Customer Support</li>
+                        <li>FAQ</li>
+                        <li>Returns & Refunds</li>
+                        <li>Shipping Policy</li>
+                        <li>Size Chart</li>
+                    </ul>
+
+                </div>
+                <div class="footer_box">
+                    <ul>
+                        <li style="font-weight: 900;">Privacy & Terms</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Unsubscribe From Newsletter</li>
+                        <li>COVID-19 Update</li>
+                        <li>Accessibility Statement</li>
+                    </ul>
+
+                </div>
+            </div>
+
         </div>
         <hr>
-            <form action="./action.php" method="post">
-
-                <div class="mainLogin">
-                    <label for="userName">帳號</label><br>
-                    <input type="text" name="userName" id="userName" size="40" required><br>
-                    <label for="userPsw">密碼</label><br>
-                    <input type="password" name="userPsd" id="userPsd" size="40" required><br>
-                    <input type="checkbox" name="remember" id="remember">記得帳號密碼
-                    <br>
-                    <div class="btn_area">
-                    <button  type="submit">登入</button>
-                    <button  id="cancelbtn" type="reset">清除</button>
-                    </div>
-                    <br>
-                </div>
-                <div class="otherLogin">
-                    <a href="#">註冊</a>
-                    <a href="#">忘記密碼</a>
-                </div>
-            </form>
-
+        <div class="footer_below">
+        <div class="copyright">COPYRIGHT © K•SWISS. ALL RIGHTS RESERVED 練習用，無商業用途
+        </div>
+        <div class="up">
+            TOP<span class="material-symbols-outlined">
+                arrow_upward
+                </span> 
         </div>
     </div>
-    ⓒ 2021 HomeLess All Right Reserved . 練習用，無商業用途
-    <!-- 登入頁面 -->
+    </div>
+
+
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -162,7 +225,7 @@
         }
         function fnFormShow() {
             var myForm = document.getElementById("loginForm");
-            myForm.style.display="block";
+            myForm.style.display = "block";
             // myForm.classList.add("form_appear");
 
         }
