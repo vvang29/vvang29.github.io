@@ -1,6 +1,14 @@
 *{
     transition: all 0.3s;
 }
+a{
+    text-decoration: none;
+    color:white;
+}
+a[href="readMore.htm"]:hover{
+    color:white;
+}
+
 body{
     
 }
@@ -269,9 +277,7 @@ ul{
     padding-top: 11px;
     position: relative;
 }
-.list_1>li{
-    /* color:yellow; */
-}
+
 .logo a img{
     width:30px;
     object-fit: contain;
@@ -296,7 +302,6 @@ ul{
     color:black;
     text-shadow: white 0 0 2px;
     font-weight: bolder;
-    
 
 }
 
@@ -308,7 +313,10 @@ li{
     margin-right: 30px;
     transition: all 0.5s;
     cursor: pointer;
-
+}
+li>a{
+    text-decoration: none;
+    color:black;
 }
 .body_container{
     margin-top: 450px;
