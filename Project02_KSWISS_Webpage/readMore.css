@@ -31,6 +31,7 @@ b {
 .readMore_banner{
     background: linear-gradient(to bottom, rgb(47, 47, 196), rgb(211, 41, 41)) ;
     background-clip: text;
+    -webkit-background-clip: text;
     padding:0 0 100px 0; 
     height: 80vh;
     position:sticky;
