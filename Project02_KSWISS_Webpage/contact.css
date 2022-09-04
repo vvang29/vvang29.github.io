@@ -1,0 +1,36 @@
+.container-fluid{
+    background: url("./img/287450617_5156374874480975_49455.png") no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+nav{
+    --bs-breadcrumb-divider: '>';
+    margin-left: 35px;
+}
+.breadcrumb>li{
+    margin-right: 0;
+}
+
+.FAQicons{
+    height:60%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 50px;
+    margin:5%;
+    padding-bottom: 80px;
+    width:80%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.tab{
+    /* background: rgba(255, 255, 255, 0.8); */
+    color:rgb(28, 28, 75);
+    font-size: 2rem;
+    display: none;
+}
+span>div{
+    font-size: 1rem;
+    color:black;
+    margin: 20px 0;
+}
