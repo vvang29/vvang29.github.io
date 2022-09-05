@@ -1,7 +1,7 @@
 .container-fluid{
-    background: url("./img/287450617_5156374874480975_49455.png") no-repeat;
+    /* background: url("./img/287450617_5156374874480975_49455.png") no-repeat;
     background-size: cover;
-    background-position: left center;
+    background-position: left center; */
 }
 nav{
     --bs-breadcrumb-divider: '>';
@@ -9,6 +9,9 @@ nav{
 }
 .breadcrumb>li{
     margin-right: 0;
+}
+.title{
+    margin-left:50px;
 }
 
 .FAQicons{
@@ -33,4 +36,42 @@ span>div{
     font-size: 1rem;
     color:black;
     margin: 20px 0;
+}
+
+.myInfo{
+    font-size: 1.5rem;
+}
+
+.basicInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+    padding:1rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+.msg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 30px;
+}
+.msg>.row{
+    /* display: flex;
+    flex-direction: column; */
+}
+.col-sm-12, .col-md-6{
+    margin-top:5%;
+}
+.myTopic, .myText{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+form>button{
+    float:right;
 }
