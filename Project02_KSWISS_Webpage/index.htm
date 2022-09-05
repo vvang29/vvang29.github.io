@@ -43,8 +43,8 @@
             <li>WISHLIST</li>
             <li>ORDER TRACKING</li>
             <li><span class="material-symbols-outlined">
-                    shopping_cart
-                </span></li>
+                <a href="./shoppingCart.htm">shopping_cart</a>
+            </span></li>
         </ul>
 
 
@@ -121,7 +121,7 @@
     <!-- 搜尋頁面 -->
 
     <div class=" banner"></div>
-   
+
 
     <div class="body_container">
         <div class="info">
@@ -246,38 +246,11 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-     <script src="./JavaScript/jquery.js"></script>
-     <script src="./JavaScript/main.js"></script>
-     <script>
-        window.onscroll = function () { fnStickyNav(); };
-        function fnStickyNav() {
-            document.getElementById("nav").style.position = "sticky";
-        }
-        function fnFormShow() {
-            var myForm = document.getElementById("loginForm");
-            myForm.style.display = "block";
-            // myForm.classList.add("form_appear");
-
-        }
-        function fnRemove() {
-            var disappear = document.getElementById("loginForm");
-            disappear.style.display = "none";
-        }
-        function fnSearch() {
-            var show = document.getElementById("search_modal");
-            show.style.display = "block";
-        }
-        function fnRemoveSearch() {
-            var disappear = document.getElementById("search_modal");
-            disappear.style.display = "none";
-        }
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-    </script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="./JavaScript/jquery.js"></script>
+    <script src="./JavaScript/main.js"></script>
+    <script src="./JavaScript/origin.js"></script>
 </body>
 
 </html>

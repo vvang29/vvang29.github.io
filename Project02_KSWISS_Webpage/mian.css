@@ -19,8 +19,6 @@ a[href="readMore.htm"]:hover{
     color:white;
 }
 
-
-
 .container{
     width:100%;
     /* border:3px red solid; */
@@ -28,7 +26,6 @@ a[href="readMore.htm"]:hover{
 }
 
 .nav{
-   
     /* border:3px pink solid; */
     width:100%;
     height:25vh;
