@@ -1,7 +1,27 @@
+body{
+    /* background: url("./img/brand-title-3.png") top center no-repeat;
+    background-size: contain;     */
+}
+
 .container-fluid{
     /* background: url("./img/287450617_5156374874480975_49455.png") no-repeat;
     background-size: cover;
     background-position: left center; */
+}
+.nav{
+    /* border:3px solid blueviolet */
+}
+.contactBanner{
+    width:100%;
+    /* border:3px hotpink solid; */
+    display: flex;
+    justify-content: center;
+    top:0%;
+}
+.contactBanner>img{
+    width:60%;
+    margin-left: auto;
+    margin-right:auto ;
 }
 nav{
     --bs-breadcrumb-divider: '>';
@@ -16,7 +36,7 @@ nav{
 
 .FAQicons{
     height:60%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 50px;
     margin:5%;
