@@ -425,14 +425,54 @@ li>a{
     /* border: 3px skyblue solid; */
     display: flex;
     cursor: pointer;
+    position: relative;
 }
+
 .shoes_img>img{
     width: 274px;
     object-fit: contain;
 }
-.shoes_img>img:hover{
+.fly{
+    animation: myAnim 1s ease 0s 1 normal forwards;}
+
+    @keyframes myAnim {
+        0% {
+            opacity: 1;
+            transform: translateY(0) ;
+        }
     
-}
+        100% {
+            opacity: 0;
+            transform: translateY(-500px) translateX(600px) ;
+        }
+    }
+
+    #small01{
+        width:20%;
+        position: absolute;
+        top:20px;
+        left: 20px;
+        opacity:0;
+    }
+    #small02{
+        width:20%;
+        position: absolute;
+        top:20px;
+        left: 320px;
+        opacity:0;
+    } #small03{
+        width:20%;
+        position: absolute;
+        top:20px;
+        left: 600px;
+        opacity:0;
+    } #small04{
+        width:20%;
+        position: absolute;
+        top:20px;
+        left: 850px;
+        opacity:0;
+    }
 /* footer */
 .footer{
     width:100%;
@@ -479,4 +519,6 @@ li>a{
 }
 /* footer */
 
-  
+
+
+

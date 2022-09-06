@@ -111,7 +111,7 @@ b {
   
   .typing-demo {
     width: 22ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    animation: typing 2s steps(22) 5s, blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -139,10 +139,6 @@ b {
       position: relative;
   }
  
-  /* #try>img:hover{
-    box-shadow: 5px 10px 18px #888888;
-} */
-
 .overLayBox{
     display: inline-block;
     position:relative;

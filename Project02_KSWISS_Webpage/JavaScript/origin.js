@@ -1,3 +1,5 @@
+//原生JS寫的
+
 window.onscroll = function () { fnStickyNav(); };
 function fnStickyNav() {
     document.getElementById("nav").style.position = "sticky";
