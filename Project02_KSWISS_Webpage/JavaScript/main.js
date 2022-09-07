@@ -20,20 +20,24 @@ $(document).ready(function(){
 //若嘗試使用jQuery內建動畫，說不定可以重複執行;且將小圖z-index設為-1,這樣一來應該不需要重複更改display屬性
 //小圖若設zindex為-1則會跑到背景圖下面，嘗試將其設為0也無法改善問題，猜測目前最佳解法應是改變opacity為0，在動畫時在改為1
 
-    $("[src*='1']").on("click", function(){
-        $("#small01").addClass("fly"); 
-    });
-    $("[src*='shoes2022Q3-2']").on("click", function(){
-        $("#small02").addClass("fly"); 
-    });
-    $("[src*='shoes2022Q3-3']").on("click", function(){
-        $("#small03").addClass("fly"); 
-    });
-    $("[src*='-4']").on("click", function(){
-        $("#small04").addClass("fly"); 
-    });
 
-    // $("#item").on("mouseout", function(){
+
+
+
+    // $("[src*='1']").on("click", function(){
+    //     $("#small01").addClass("fly"); 
+    // });
+    // $("[src*='shoes2022Q3-2']").on("click", function(){
+    //     $("#small02").addClass("fly"); 
+    // });
+    // $("[src*='shoes2022Q3-3']").on("click", function(){
+    //     $("#small03").addClass("fly"); 
+    // });
+    // $("[src*='-4']").on("click", function(){
+    //     $("#small04").addClass("fly"); 
+    // });
+
+    // $("[src*='1']").on("mouseout", function(){
     //     $("#small01").css("opacity","1");
     //     $("small01").removeClass("fly");
     //     console.log(123);
@@ -55,7 +59,26 @@ $(document).ready(function(){
     //         opacity:"0"
     //     },); 
     // })
-
-
+//老師提供的解方，1.使用html重新複寫div內容
+//2. 在圖片區外匡加上一個div（內含圖片本身和小圖的空div）
+//3.每次點擊這個區域（不是只有圖片），變重新複寫內部div的html框架
+    $("#item01").on("click", function(){
+        $("#small01").html(`<div class="fly">
+        <img src="./img/shoes2022Q3-1.png" width=50% alt="">
+    </div>`);
+    });
+    $("#item02").on("click", function(){
+        $("#small02").html(`<div class="fly">
+        <img src="./img/shoes2022Q3-2.png" width=50% alt="">
+    </div>`);
+    });$("#item03").on("click", function(){
+        $("#small03").html(`<div class="fly">
+        <img src="./img/shoes2022Q3-3.png" width=50% alt="">
+    </div>`);
+    });$("#item04").on("click", function(){
+        $("#small04").html(`<div class="fly">
+        <img src="./img/shoes2022Q3-4.png" width=50% alt="">
+    </div>`);
+    });
 
 });

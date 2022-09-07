@@ -432,6 +432,10 @@ li>a{
     width: 274px;
     object-fit: contain;
 }
+.shoes_img1{
+    width: 274px;
+    object-fit: contain;
+}
 .fly{
     animation: myAnim 1s ease 0s 1 normal forwards;}
 
@@ -452,26 +456,26 @@ li>a{
         position: absolute;
         top:20px;
         left: 20px;
-        opacity:0;
+        /* opacity:0; */
     }
     #small02{
         width:20%;
         position: absolute;
         top:20px;
         left: 320px;
-        opacity:0;
+        /* opacity:0; */
     } #small03{
         width:20%;
         position: absolute;
         top:20px;
         left: 600px;
-        opacity:0;
+        /* opacity:0; */
     } #small04{
         width:20%;
         position: absolute;
         top:20px;
         left: 850px;
-        opacity:0;
+        /* opacity:0; */
     }
 /* footer */
 .footer{
