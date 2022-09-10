@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    <title>Document</title>
+    <style>
+        span{
+            font-weight: bolder;
+            font-size: 1.5rem;
+        }
+        .demo p{
+            margin:5%;
+        }
+        img{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="row">
+        <div class="header h1 col-sm-12">全台展覽資訊</div>
+        <img src="" alt="">
+        <div class="demo "></div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script>
+        $.ajax({
+            url:"https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6",
+            dataType:"json",
+            success:function(data){
+                data.map(function(item){
+                    if (item.imageUrl == ""){
+                        item.imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAm6dU5JsOoX02Rm2pRIq0hW6uIQ8VC8h42w&usqp=CAU";
+                    }
+                    $(".demo").append("<div class=\'col-sm-8\''><p><span>展覽標題：</span>"
+                        +item.title+"<br> 展覽時間："
+                        +item.showInfo[0].time+"<br>展覽地點："
+                        +item.showInfo[0].location+"<br>展覽介紹："+
+                        item.descriptionFilterHtml+"</p></div>"
+                        +"<div class=\'col-sm-4\'><img class=\"float-end\"src=\'"+item.imageUrl+"\'></div>");
+                    })
+                    
+            },
+            error:function(error){
+                alert("發生錯誤");
+            },        
+        })
+    </script>
+</body>
+</html>
