@@ -49,7 +49,8 @@ $
 //把範圍改成全部便解決問題:)
 $(".item").click(function(){
     // $(this).prev("input").attr("checked","checked");
-    $(this).toggleClass("crossLine");
+    // $(this).toggleClass("crossLine");
+    $(this).find($(".itemContent")).toggleClass("crossLine");
 })
 
 
