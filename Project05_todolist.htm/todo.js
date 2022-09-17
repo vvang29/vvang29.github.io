@@ -12,7 +12,7 @@ $(document).ready(function(){
         let add = $("#addItemVal").val();
         if(add == ''){  //使用者需輸入內容才可新增項目
             alert("Please fill in the box.");
-        }else{
+        }else{//新增項目
             var inputValue = $("#addItemVal").val();
             $(".listArea").append(
               `<div class="item">
@@ -20,9 +20,35 @@ $(document).ready(function(){
               <button type="button" class="deleteItem">X</button>
               </div> `
             );
+            //送出新增項目後將input清空
+            $("#addItemVal").val('');
+            
         }
 
     });//addItem function end
+
+    //addItem with the key 'enter'
+    $(document).on('keypress',function(e) {
+        let add = $("#addItemVal").val();
+        if(e.which == 13 && add !== '') {
+            // alert('You pressed enter!');
+        var inputValue = $("#addItemVal").val();
+        $(".listArea").append(
+            `<div class="item">
+            <div class="itemContent">${inputValue}</div>
+            <button type="button" class="deleteItem">X</button>
+            </div> `
+        );
+        //送出新增項目後將input清空
+        $("#addItemVal").val('');
+
+        }
+        // else if(add == ''){//內容空白不可新增項目
+        //     alert("Please fill in the box.");
+        //     console.log(123);
+        // }
+    });
+
 
     
 
