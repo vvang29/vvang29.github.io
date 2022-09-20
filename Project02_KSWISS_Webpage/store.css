@@ -1,7 +1,0 @@
-nav{
-    --bs-breadcrumb-divider: '>';
-    margin-left: 35px;
-}
-.breadcrumb>li{
-    margin-right: 0;
-}

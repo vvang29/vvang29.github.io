@@ -5,17 +5,17 @@ a{
     text-decoration: none;
     color:white;
 }
-a[href="./contact.htm"]{
+a[href="./contact.html"]{
     text-decoration: none;
     color:white;
 }
 
 
-a[href="readMore.htm"]{
+a[href="readMore.html"]{
 /* border:1px red solid; */
 padding:20px;
 }
-a[href="readMore.htm"]:hover{
+a[href="readMore.html"]:hover{
     color:white;
 }
 
