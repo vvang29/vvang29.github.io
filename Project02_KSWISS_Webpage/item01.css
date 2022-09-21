@@ -1,0 +1,175 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    --bs-breadcrumb-divider: '>';
+    margin-left: 35px;
+}
+.breadcrumb>li{
+    margin:0;
+}
+.itemPic{
+    /* border:3px red solid; */
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.itemDemo{
+    /* border:3px rgb(115, 255, 0) solid; */
+    /* background-color:darksalmon; */
+}
+.itemIntro{
+    /* border:3px blue solid; */
+    padding: 5%;
+}
+.itemDemo{
+    width:80%;
+    height:100%;
+    /* border:3px dimgrey dashed; */
+    display: flex;
+    align-items: center;
+}
+.itemDemo>img{
+    width:100%;
+}
+.icon{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width:100%;
+    /* border:3px red solid; */
+    padding:5%;
+
+}
+.picSelect{
+width:20%;
+display: flex;
+align-items: center;
+margin:0 5px;
+cursor: pointer;
+}
+.picSelect>img{
+    width:100%;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+.rating{
+    display: flex;
+    /* border:3px solid darkgreen; */
+    margin:15px 0;
+}
+.star{
+    color:#fdf851;
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+
+
+.price{
+    font-family: Optima, sans-serif	;
+    margin:20px 10px;
+}
+.newPrice{
+    color:blue;
+    font-family: Optima, sans-serif	;
+    font-weight: bold;
+}
+.crossLine{
+    text-decoration: line-through;
+    font-style: italic;
+    
+}
+.color{
+    /* border:3px solid darkgreen; */
+    margin:20px 0;
+
+
+}
+.colorSelect{
+    display: flex;
+    justify-content: space-evenly;
+    width:50%;
+    /* height:50px; */
+    /* border:3px lawngreen solid; */
+    cursor:pointer;
+    margin:20px 0;
+
+}
+.colorSelect>div:hover{
+    width:22px;
+    height: 22px;
+}
+.colorOption1{
+    width:20px;
+    height:20px;
+    background-color:#3d4c8a;
+    border-radius: 100%;
+}
+.colorOption2{
+    width:20px;
+    height:20px;
+    background-color:#3d8a62;
+    border-radius: 100%;
+}
+.colorOption3{
+    width:20px;
+    height:20px;
+    background-color:#bf8ad4;
+    border-radius: 100%;
+}
+.colorOption4{
+    width:20px;
+    height:20px;
+    background-color:#8a8fd4;
+    border-radius: 100%;
+}
+.shoeSizeSelect{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+}
+
+.shoeSizeSelect>div{
+    margin:2%;
+    width:20%;
+    padding:5px;
+    text-align: center;
+    cursor: pointer;
+}
+.shoeSizeSelect>div:hover{
+    border:1px solid gray;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:10px;
+    /* border:1px solid gray; */
+
+}
+
+.quantity>input{
+    width:80px;
+    height:30px;
+    margin-right: 10px;
+}
+.promo{
+    /* border:3px forestgreen solid; */
+
+}
+.ad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border:3px deeppink dashed; */
+}
+.promo img{
+    width:80%;
+}
