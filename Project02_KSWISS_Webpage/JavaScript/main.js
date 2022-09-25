@@ -1,12 +1,51 @@
 $(document).ready(function(){
 
-    $(document).mousemove(function(event){
-        if(event.pageY > 500){
-            $(".list_2").hide();
-        }else{
-            $(".list_2").show();
-        }
-    });
+    console.log("document.height:" + $(document).height());//整個網頁高度
+    console.log("window.height"+$(window).height());//瀏覽器高度
+    console.log("body.innerHeight"+$("body").innerHeight());//整個網頁高度
+
+$(document).on("click",$("body"),function(event){
+    console.log(event.pageX,event.pageY);//滑鼠點擊座標
+})
+
+$(document).on("scroll",function(){
+    console.log("scrolled!");
+    console.log($(window).scrollTop());
+    if($(window).scrollTop()>300){
+        $('.list_2').hide();
+    }else{
+        $('.list_2').show();
+
+    }
+    // console.log($(document).offset().top);
+    // if($(window.pageYOffset) < 1500){
+    //     $('.list_2').show();
+    //     console.log(123);
+    //     console.log($(window.pageYOffset));
+    // }else{
+    //     $('.list_2').hide();
+    //     console.log(456);
+    //     console.log($(window.pageYOffset));
+
+    // }
+})
+
+    // $(window).scroll(function(){
+    //     if ( $(window).offset().top < 1000) {
+    //         $('.list_2').show();
+ 
+    //      } else {
+    //         $('.list_2').hide();
+    //      }
+    // })
+
+    // $(document).mousemove(function(event){
+    //     if(event.pageY > 500){
+    //         $(".list_2").hide();
+    //     }else{
+    //         $(".list_2").show();
+    //     }
+    // });
 
 // 目前這個版本雖動畫成功，但點擊結束後會留下空位
     // $("img").on("click", function(){

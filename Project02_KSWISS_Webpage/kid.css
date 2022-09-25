@@ -32,7 +32,6 @@ nav{
 }
 .picDemo>img{
     width:100%;
-    /* border:3px red dashed; */
 }
 .productName{
     margin:20px 0;
@@ -49,6 +48,4 @@ border:3px purple;
 .page ul li a{
     font-size: 1.3rem;
     border:3px purple;
-
-
 }
