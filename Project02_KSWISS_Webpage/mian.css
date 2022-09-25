@@ -5,6 +5,9 @@ a{
     text-decoration: none;
     color:white;
 }
+a:hover{
+    color:white;
+}
 a[href="./contact.html"]{
     text-decoration: none;
     color:white;
