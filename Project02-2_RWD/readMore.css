@@ -1,0 +1,180 @@
+
+.boxText{
+    height:350px;
+    background: rgb(0, 0, 0);
+    padding:0;
+}
+.boxPic{
+    height:350px;
+    /* background: #e5e2e2; */
+    padding:0;
+
+}
+.boxPic>p{
+    margin:2rem;
+}
+.rod>div{
+    padding:0;
+}
+.boxText>img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+/* svg{
+    width:30%;
+} */
+b {
+    font-family: "Font Awesome 5 Free";
+    font-size: 3em;
+}
+.readMore_banner{
+    background: linear-gradient(to bottom, rgb(47, 47, 196), rgb(211, 41, 41)) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding:0 0 100px 0; 
+    height: 80vh;
+    position:sticky;
+    animation: myBanner 1s ease 0s 1 normal forwards;
+}
+@keyframes myBanner {
+	0% {
+		transform: scale(3);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.readMore_banner>p{
+    font-size: 8vw;
+    font-weight: bolder;
+    color:rgba(255, 248, 220, 0);
+}
+.pantone2022{
+    height: 100vh;
+    background:rgb(97,98,160);
+    background-image: url("./img/2022.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+        -webkit-background-size: cover;  
+        -o-background-size: cover;  
+        -moz-background-size: cover;  
+        -ms-background-size: cover;
+
+}
+.pantone2021{
+    height: 100vh;
+    background-image:url("./img/2021.png") ;
+        background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;  
+    -o-background-size: cover;  
+    -moz-background-size: cover;  
+    -ms-background-size: cover;
+}
+.pantone2020{
+    height:100vh;
+    background: rgb(24,79,130);
+    background-image: url("./img/2020.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;  
+    -o-background-size: cover;  
+    -moz-background-size: cover;  
+    -ms-background-size: cover;
+}
+.pantone2019{
+    height:100vh;
+    background: rgb(221,117,112);
+    background-image: url("./img/2019.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;  
+    -o-background-size: cover;  
+    -moz-background-size: cover;  
+    -ms-background-size: cover;}
+.wrapper {
+    height: 50vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22) 5s, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  #try{
+      /* border:3px blue solid; */
+      text-align: center;
+  }
+  #try>img{
+      width:300px;margin:30px;
+      position: relative;
+  }
+ 
+.overLayBox{
+    display: inline-block;
+    position:relative;
+    width:300px;
+}
+.image{
+    display:block;
+    width:100%;
+    height:auto;
+}
+.overlay{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.568);
+    overflow:hidden;
+    width:100%;
+    height:0;
+    cursor: pointer;
+    transition: all, .5s;
+}
+.overLayBox:hover .overlay{
+    height:100%;
+}
+.textInside{
+    color:white;
+    font-size: 20px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+a:hover{
+    /* color:rgb(185, 57, 57); */
+}

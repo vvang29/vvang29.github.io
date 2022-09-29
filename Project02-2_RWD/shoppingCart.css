@@ -1,0 +1,12 @@
+img{
+    width:70%;
+}
+input[type="number"]{
+    width:3em;
+}
+.final{
+    float:right
+}
+.container{
+    margin-top: 10%;;
+}

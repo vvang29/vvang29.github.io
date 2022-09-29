@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>K-SWISS Gallery</title>
+</head>
+
+<body>
+    <div class="main_Area">
+        <div class="arrow">
+            <span onclick="fnBack(-1)" id="arrow" class="material-symbols-rounded">
+                arrow_back_ios
+            </span>
+        </div>
+        <img class="modal_photo" src="./1.png" alt="">
+
+        <div class="arrow">
+            <span onclick="fnNext(1);" id="arrow" class="material-symbols-rounded">
+                arrow_forward_ios
+            </span>
+        </div>
+
+    </div>
+    <div class="slide_btns">
+        <div class="demo">
+        </div>
+    </div>
+    <script>
+        for (var i = 1; i < 8; i++) {
+            $(".demo").append("<img  src=" + "./" + i + ".png onclick=\"fnChange(" + i + ")\"> ");
+
+        }
+        var number = 1;
+        function fnNext(add) {
+            number += add;
+            if ( (number + add) > 8) {
+                var result = (number + add) % 7;
+                $(".modal_photo").attr('src', "./"+ result +".png");
+
+            } else {
+                number += add;
+                $(".modal_photo").attr('src', "./" + number + ".png");
+            }
+        }
+        function fnBack(minus) {
+            if ((number+minus) < 1) {
+                $(".modal_photo").attr('src', "./1.png");
+            } else{
+                number += minus;
+                $(".modal_photo").attr('src', "./" + number + ".png");
+            }
+
+
+        }
+
+        function fnChange(num) {
+
+            if (num == 1) {
+                $(".modal_photo").attr('src', "./" + num + ".png");
+                // $(".demo > img:eq(0)").addClass("pic_border");
+                // $(this).on("animationend", function(){
+                //     $(this).removeClass("pic_border");
+                // });
+            } else if (num == 2) {
+                $(".modal_photo").attr('src', "./" + num + ".png");
+                // $(".demo > img:eq(1)").addClass("pic_border");
+
+            } else if (num == 3) {
+                $(".modal_photo").attr('src', "./" + num + ".png");
+                // $(".demo > img:eq(2)").addClass("pic_border");
+
+            } else if (num == 4) {
+                $(".modal_photo").attr('src', "./" + num + ".png");
+            } else if (num == 5) {
+                $(".modal_photo").attr('src', "./" + num + ".png");
+            } else if (num == 6) {
+                $(".modal_photo").attr('src', "./" + num + ".png");
+            } else if (num == 7) {
+                $(".modal_photo").attr('src', "./" + num + ".png");
+            }
+            
+
+        }
+
+    </script>
+</body>
+
+</html>

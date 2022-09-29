@@ -1,0 +1,693 @@
+*{
+    transition: all 0.2s;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.nav a:hover{
+    color:white;
+}
+a[href="./contact.html"]{
+    text-decoration: none;
+    color:white;
+}
+
+
+a[href="readMore.html"]{
+/* border:1px red solid; */
+padding:20px;
+}
+a[href="readMore.html"]:hover{
+    color:white;
+}
+
+.container{
+    width:100%;
+    /* border:3px red solid; */
+    padding: 0;
+}
+
+
+.nav{
+    /* border:3px pink solid; */
+    width:100%;
+    /* height:25vh; */
+    display:flex;
+    flex-direction: column;
+    position: sticky;
+    /*position: relative;
+    top:-500px; */
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 0;
+    
+
+    
+}
+/* 登入頁面 */
+.loginForm {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: none;  /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+}
+
+
+.container_form {
+    width: 470px;
+    background-color: white;
+    padding: 20px 20px;
+    margin: 15% auto 15% auto;
+    animation: loginFormShow 1s ease 0s 1 normal forwards;
+
+}
+
+@keyframes loginFormShow {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.form_vanish{
+    animation: loginFormVanish 1s ease 0s 1 normal forwards;
+}
+@keyframes loginFormVanish {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+}
+
+
+hr{
+    margin: 0px;
+}
+.form_head{
+    display: flex;
+    justify-content: space-between;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.exit {
+    position: relative;
+    cursor: pointer;
+}
+.btn_area>button{
+background-color: rgb(22,78,128);
+border-radius:10px ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin:5px;
+}
+/* 待改 */
+button:hover{
+    opacity: 0.8;
+}
+.btn_area{
+    display: flex;
+}
+
+#cancelbtn {
+    background-color: rgb(128, 26, 22);
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+.otherLogin {
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.otherLogin>a{
+    margin:5px;
+}
+/* 登入頁面 */
+/* 搜尋頁面 */
+.search_modal{
+    width:100%;
+    height: 100vh;
+    /* position: fixed; */
+    background-color:rgba(0, 0, 0, 0.9);
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    display:none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    animation: mySearch 300ms linear 0s 1 normal forwards;
+}
+@keyframes mySearch {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+.search_area{
+    width:30%;
+    height:40%;
+    /* background: white; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    
+}
+#exit_search{
+    cursor: pointer;
+    color:white;
+    margin: 5px 0;
+    position:absolute;
+    top:30px;
+    right:30px;
+    font-size: 36px;
+    font-weight: bolder;
+}
+.search_area>form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+.search_area input[type=text]{
+    padding:15px;
+    border:none;
+    float:left;
+    width:80%;
+
+}
+.search_area button{
+    padding:15px;
+    border:none;
+    background-color: rgb(22,78,129) ;
+    color:white;
+
+}
+.block{
+    display: none;
+    width: 100%;
+    /* border: 3px solid gold; */
+    height:300px;
+    background:url("./img/banner.png") no-repeat top center;
+    background-size: contain;
+}
+
+
+.banner{
+    background:url("./img/banner.png") no-repeat center top   ;
+    background-attachment: fixed;
+    background-size: 100%;
+    width:100%;
+    height:100vh;
+    /* position: absolute;*/
+    /* top:0;  */
+    display: block;
+    /* border:3px darkmagenta dashed; */
+
+}
+.cellIcon{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    body {
+      /* background-color: lightblue; */
+    }
+    /* .banner{
+    background:url("./img/banner.png") no-repeat top center;
+    background-size: contain;
+    border:3px red solid;
+    width:100%;
+    height:350px;
+    display: block;
+
+    } */
+    .nav{
+        background-color: black;
+        height:35px;
+        /* border:1px lightcoral dashed */
+    }
+    li{
+        display: none;
+        margin:0;
+    }
+    .list_2{
+        display: none;
+
+    }
+    .cellIcon{
+        display: inline-block;
+        cursor: pointer;
+
+    }
+    .banner{
+        display: none;
+    }
+    .block{
+        display: block;
+    }
+    
+    .info_text_1{
+        display: none;
+    }
+    .features{
+        display: none;
+    }
+  }
+
+
+ul{
+    list-style: none;
+    font-size: 11px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+/*下拉式選單 My Account*/
+.myAccount{
+    position:relative;
+}
+
+.dropdown{
+    position: absolute;
+    top:25px;
+    display: block;
+    padding:0;
+    width:120%;
+    display: none;
+}
+.myAccount:hover .dropdown{
+    animation: myAccount 1s ease 0s 1 normal forwards;
+    display:block;
+}
+@keyframes myAccount {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+}
+.dropdown>li{
+    background-color: rgb(0, 0, 0);
+    width:100%;
+    padding: 10px;;   
+}
+.dropdown>li:hover{
+    background: rgb(22,78,129);
+}
+/*下拉式選單*/
+
+.list_1{
+    width:100%;
+    height: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:rgb(255, 255, 255);
+    padding-top: 11px;
+    position: relative;
+}
+
+.logo a img{
+    width:30px;
+    object-fit: contain;
+    position: absolute;
+    top:0px;
+    left:15px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.list_2{
+    /* width:80%;
+    height: 37px;
+    margin-left: auto;
+    margin-right: auto; */
+    margin:0;
+    float:right;
+    color:black;
+    text-shadow: white 0 0 2px;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.list_2>li:hover{
+    color:white;
+    text-shadow: black 0px 4px 4px;
+}
+li{
+    margin-right: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+li>a{
+    text-decoration: none;
+    color:black;
+}
+
+@media screen and (max-width: 600px){}
+@media (min-width: 300) { 
+    .nav{
+        width:100%;
+    }
+ }
+
+@media (min-width: 992px) { 
+    .nav{
+        width:100%;
+    }
+ }
+
+@media (min-width: 1200px) {
+    .nav{
+    width:100%;
+}
+ }
+
+/* 設定最大的樣式 */
+@media (min-width: 1440px) { 
+    .list_1{
+        width:1440px;
+    }
+    .list_2{
+        width:1440px;
+    }
+ }
+
+/* 設定最大的樣式 */
+
+
+
+.cellIcon{
+    color:white;
+}
+.body_container{
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:80%;
+    /* position:relative;
+    top:500px; */
+    /* border:3px mediumslateblue solid; */
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent),  url("./img/圖層\ 2.png") no-repeat center top;
+    background-size: cover;
+}
+
+.info{
+    background-color: rgba(255, 255, 255, 0.445);
+    width:100%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border:3px green solid; */
+
+}
+.title{
+    font-size: 2em;
+}
+.info_text{
+    display: flex;
+    align-items: center;
+}
+.info_text_1{
+    width:370px;
+    height: 75px;
+}
+.info_text_2{
+    width:347px;
+    height: 199px;
+}
+.features{
+    /* display: none; */
+    width:100%;
+    text-align: center;
+    padding: 10% 0;
+    background-color: rgba(0, 0, 0, 0.781);
+    /* border:3px blue solid; */
+    /* position: absolute; */
+    top:900px;
+}
+.features>img{
+    width:70%;
+    object-fit: contain;
+}
+.cards_area{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    /* border: 3px orangered solid; */
+    padding: 2rem;
+
+
+    
+}
+.cards{
+    padding: 1rem;
+    width:33%;
+    /* height: 451px; */
+    background: rgba(0, 0, 0, 0.623);
+    margin:0px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* justify-content: space-evenly;
+    align-items: center;     */
+    /* border:3px turquoise solid; */
+    transition: all 0.5s;
+    
+}
+.cards:hover{
+    box-shadow: white 0 0 5px;
+    transform: scale(1.1);
+}
+.cards img{
+    width:100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.card_text{
+    color:white;
+    font-size: 1vw;
+    width:80%;
+    /* text-align: center; */
+    /* border:3px darkorange solid; */
+}
+.shoes_area{
+    padding: 2%;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.8), black);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* border: 3px yellow solid; */
+}
+.shoes_title{
+    color:white;
+
+}
+.shoes_img{
+    width:100%;
+    height: 260px;
+    /* border: 3px skyblue solid; */
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.shoes_img>img{
+    width: 274px;
+    object-fit: contain;
+}
+.shoes_img1{
+    width: 25%;
+    object-fit: contain;
+}
+.fly{
+    animation: myAnim 1s ease 0s 1 normal forwards;}
+
+    @keyframes myAnim {
+        0% {
+            opacity: 1;
+            transform: translateY(0) ;
+        }
+    
+        100% {
+            opacity: 0;
+            transform: translateY(-500px) translateX(600px) ;
+        }
+    }
+
+    #small01{
+        width:20%;
+        position: absolute;
+        top:20px;
+        left: 20px;
+        /* opacity:0; */
+    }
+    #small02{
+        width:20%;
+        position: absolute;
+        top:20px;
+        left: 320px;
+        /* opacity:0; */
+    } #small03{
+        width:20%;
+        position: absolute;
+        top:20px;
+        left: 600px;
+        /* opacity:0; */
+    } #small04{
+        width:20%;
+        position: absolute;
+        top:20px;
+        left: 850px;
+        /* opacity:0; */
+    }
+/* footer */
+.footerBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border:3px solid salmon; */
+}
+.footer{
+    width:100%;
+    height:100%;
+    background: linear-gradient(to bottom, #4F5862, black);
+    color:white;
+    padding: 15px 0;
+    margin:0;
+    /* font-size: 1rem; */
+    /* position: relative; */
+}
+.footer_moreInfo{
+    /* position: absolute;
+    left:50px; */
+    margin: 0 15px;
+    display:flex;
+    justify-content: space-between;
+}
+.title{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.footer p{
+    width:300px;
+}
+.footer_box_area{
+    display:flex;
+}
+.footer_box>ul{
+    display: block;
+    margin-right:0px;
+}
+.footer ul li{
+    margin:0 15px 15px 15px;
+}
+.footer_below{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+.group_UP{
+    display: flex;
+    cursor: pointer;
+}
+/* footer */
+@media (min-width: 1440px) { 
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner{
+        width: 1440px;
+        background-size: 90%;
+        /* border:3px red solid; */
+    }
+    .body_container{        
+        width: 1440px;
+    }
+    .cards_area{
+        width: 1440px;
+    }
+    .shoes_area{
+        width: 1440px;
+    }
+    .footer{
+        width: 1440px;
+    }
+ }
+
+
+/* cell version */
+/* .cellIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cellIntro img{
+    width: 100%;
+    object-fit: contain;
+} */
+.hi{
+    display: none;
+}
+.cellIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cellIntro img{
+    width: 100%;
+    object-fit: contain;
+}

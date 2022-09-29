@@ -1,0 +1,96 @@
+@media (min-width: 1440px) { 
+    .row{
+        width:1440px;
+    }
+ }
+
+ .row{
+     padding:3%;
+ }
+.contactBanner{
+    width:100%;
+    /* border:3px hotpink solid; */
+    display: flex;
+    justify-content: center;
+    top:0%;
+}
+.contactBanner>img{
+    width:60%;
+    margin-left: auto;
+    margin-right:auto ;
+}
+nav{
+    --bs-breadcrumb-divider: '>';
+    margin-left: 35px;
+}
+.breadcrumb>li{
+    margin-right: 0;
+}
+.title{
+    margin-left:50px;
+}
+
+.FAQicons{
+    /* border: 3px darkorange solid; */
+    width: 100%;
+    height:60%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 50px;
+    margin:5%;
+    padding-bottom: 80px;
+    width:80%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.tab{
+    /* background: rgba(255, 255, 255, 0.8); */
+    color:rgb(28, 28, 75);
+    font-size: 2rem;
+    display: none;
+    
+}
+span>div{
+    font-size: 1rem;
+    color:black;
+    margin: 20px 0;
+}
+
+.myInfo{
+    font-size: 1.5rem;
+}
+
+.basicInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+    padding:1rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+.msg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 30px;
+}
+.msg>.row{
+    /* display: flex;
+    flex-direction: column; */
+}
+.col-sm-12, .col-md-6{
+    margin-top:5%;
+}
+.myTopic, .myText{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+form>button{
+    float:right;
+}

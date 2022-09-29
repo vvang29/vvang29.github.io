@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/faq-accordion-card-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "切版"
+	}
+}
