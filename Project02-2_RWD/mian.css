@@ -60,12 +60,13 @@ a[href="readMore.html"]:hover{
 
 
 .container_form {
-    width: 470px;
+    width: 80%;
     background-color: white;
-    padding: 20px 20px;
+    padding: 5%;
     margin: 15% auto 15% auto;
     animation: loginFormShow 1s ease 0s 1 normal forwards;
-
+    /* border: 3px solid red; */
+    overflow: hidden;
 }
 
 @keyframes loginFormShow {
@@ -144,6 +145,7 @@ button:hover{
 }
 .otherLogin>a{
     margin:5px;
+    color:rgb(0, 0, 0)
 }
 /* 登入頁面 */
 /* 搜尋頁面 */
@@ -239,7 +241,7 @@ button:hover{
     
     .nav{
         background-color: black;
-        height:35px;
+        height:50px;
         /* border:1px lightcoral dashed */
     }
     li{
@@ -253,7 +255,13 @@ button:hover{
     .cellIcon{
         display: inline-block;
         cursor: pointer;
+    }
+    .logo a img{
+        width:10%;
 
+    }
+    .material-symbols-outlined{
+        font-size: 3rem;
     }
     .banner{
         display: none;
