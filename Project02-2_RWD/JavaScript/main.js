@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+    $(".cellMenu").hide();
     if($(window).width()>600){
         $(".cellIntro").hide()
         $(".body_container").show();
@@ -24,6 +24,12 @@ $(document).ready(function(){
         console.log("nooooooo");
     } });
 
+    $("#exitCellist").on("click", function(){
+        $(".cellMenu").fadeOut();
+    })
+    $(".cellIcon").on("click", function(){
+        $(".cellMenu").fadeToggle();
+    })
 
 
 

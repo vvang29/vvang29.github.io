@@ -178,3 +178,24 @@ b {
 a:hover{
     /* color:rgb(185, 57, 57); */
 }
+
+@media screen and (max-width: 600px){
+    .pantone2022{
+        background-attachment: scroll;
+        background-size: contain;
+    }
+    .pantone2021{
+        background-attachment: scroll;
+        background-size: contain;
+        background-color: rgb(99, 95, 95);
+    }
+    .pantone2020{
+        background-attachment: scroll;
+        background-size: contain;
+    }
+    .pantone2019{
+        background-attachment: scroll;
+        background-size: contain;
+    }
+
+}
